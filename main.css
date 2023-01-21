@@ -2,7 +2,6 @@
   --main-color: #e53935;
   --white: #fce9e8;
   --black: #170303;
-  --grey: #5b5252;
 }
 
 * {
@@ -10,6 +9,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
   color: var(--black);
 }
 
@@ -48,13 +48,15 @@ nav li {
 }
 
 .presentation {
-  text-align: center;
   width: clamp(300px, 50%, 500px);
-  padding: 4px;
   margin: 10px auto;
-  font-weight: 400;
+}
 
-  color: var(--black);
+.presentation p {
+  text-align: center;
+  font-size: medium;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
 .buttons {

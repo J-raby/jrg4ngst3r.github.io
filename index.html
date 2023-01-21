@@ -1,83 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- linkeo del css -->
-    <link rel="stylesheet" href="main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Basic link website for myself" />
+  <meta name="keywords" content="instagram, linkedIn, url, mail, github" />
+  <meta name="author" content="Javier Raby" />
+  <meta name="copyright" content="jrpp199 2023" />
+  <meta name="robots" content="index" />
+  <meta name="robots" content="follow" />
 
-    <!-- agrego las fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <img
-        class="logo"
-        src="./assets/images/242011471_599893191419468_2009247865981261488_n.jpg"
-        alt="portrait"
-      />
-      <a
-        class="hashtag"
-        href="https://www.instagram.com/rabyjavier/"
-        class="account"
-        >@JavierRaby</a
-      >
-      <nav>
+  <!-- Facebook og -->
+  <meta property="og:title" content="Raby Javier" />
+  <meta property="og:descripcion" content="Links de interes" />
+  <meta property="og:image" content="./assets/images/242011471_599893191419468_2009247865981261488_n.jpg" />
+
+  <!-- Twitter -->
+  <meta property="og:title" content="Raby Javier" />
+  <meta property="og:descripcion" content="Links de interes" />
+  <meta property="og:image" content="./assets/images/242011471_599893191419468_2009247865981261488_n.jpg" />
+
+  <title>Document</title>
+
+  <!-- linkeo del css -->
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- agrego las fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./assets/images/242011471_599893191419468_2009247865981261488_n.jpg" alt="portrait" />
+    <a class="hashtag" href="https://www.instagram.com/rabyjavier/" class="account">@rabyjavier</a>
+    <nav>
+      <ul>
+
         <li>
-          <a
-            class="icon"
-            href="https://www.linkedin.com/in/javier-raby-b47186114/"
-            ><img
-              src="https://img.icons8.com/ios-filled/50/null/linkedin.png"
-              style="border-radius: 22px"
-          /></a>
+          <a class="icon" href="https://www.linkedin.com/in/javier-raby-b47186114/"><img
+              src="https://img.icons8.com/ios-filled/50/null/linkedin.png" style="border-radius: 22px"
+              alt="linkedIn Profile" /></a>
         </li>
         <li>
-          <a class="icon" href="https://www.instagram.com/rabyjavier/"
-            ><img
-              src="https://img.icons8.com/ios-filled/50/null/instagram-new--v1.png"
-          /></a>
+          <a class="icon" href="https://www.instagram.com/rabyjavier/"><img
+              src="https://img.icons8.com/ios-filled/50/null/instagram-new--v1.png" alt="instagram Profile" /></a>
         </li>
         <li>
-          <a class="icon" href="https://github.com/jrg4ngst3r"
-            ><img
+          <a class="icon" href="https://github.com/jrg4ngst3r"><img
               src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/000000/external-github-community-for-software-building-and-testing-online-logo-bold-tal-revivo.png"
-              style="scale: 98%; border-radius: 14px"
-          /></a>
+              style="scale: 98%; border-radius: 14px" alt="github Profile" /></a>
         </li>
         <li>
-          <a
-            class="icon"
-            href="mailto:javiraby@gmail.com?subject=Contacto por linkArbol"
-            ><img
-              src="https://img.icons8.com/ios-filled/50/null/apple-mail.png"
-          /></a>
+          <a class="icon" href="mailto:javiraby@gmail.com?subject=Contacto por linkArbol"><img
+              src="https://img.icons8.com/ios-filled/50/null/apple-mail.png" alt="send me email" /></a>
         </li>
-      </nav>
-    </header>
-    <section class="presentation">
+      </ul>
+    </nav>
+  </header>
+  <section class="presentation">
+    <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis
       odio laborum delectus dicta quos eos iure placeat error, consequatur id
       voluptates animi, fugiat enim voluptate commodi. Vel quae nobis doloribus
       unde sapiente provident eius consequuntur incidunt? Minus modi in dolore
       voluptate ab repudiandae delectus ut iste qui molestiae soluta eum
-    </section>
-    <section class="buttons">
-      <a class="btn btn--short" href="#">Mis cursos</a>
-      <a class="btn btn--long" href="#">Mi charla TDX</a>
-      <a class="btn btn--short" href="#">Mi musica</a>
-    </section>
-    <footer>
-      <hr />
-      copy @Raby javier 2023
-    </footer>
-  </body>
+    </p>
+    <ul class="buttons">
+      <li><a class="btn btn--short" href="#">Mis cursos</a></li>
+      <li><a class="btn btn--long" href="#">Mi charla TDX</a></li>
+      <li><a class="btn btn--short" href="#">Mi musica</a></li>
+    </ul>
+
+  </section>
+  <footer itemscope itemtype="https://schema.org/Person">
+    <hr />
+    <span>©rabyjavier, All rights reserved</span>
+    <div hidden itemscope itemtype="https://schema.org/Person">
+      <span itemprop="name">Javier Raby</span>
+      <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="streetAddress">
+          av Espejo 786
+        </span>
+        <span itemprop="addressLocality">Parana</span>,
+        <span itemprop="addressRegion">SA</span>
+        <span itemprop="postalCode">3100</span>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
 </html>
