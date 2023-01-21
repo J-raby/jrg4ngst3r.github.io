@@ -1,0 +1,94 @@
+:root {
+  --main-color: #e53935;
+  --white: #fce9e8;
+  --black: #170303;
+  --grey: #5b5252;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--black);
+}
+
+body {
+  background: var(--main-color);
+  color: var(--black);
+
+  padding: 4em 4rem 0;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+}
+
+img:is(.logo) {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+
+  box-shadow: var(--black) -4px 4px 2px;
+}
+
+.hashtag {
+  margin: 10px 0;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav {
+  padding: 10px;
+}
+nav li {
+  display: inline-block;
+}
+
+.presentation {
+  text-align: center;
+  width: clamp(300px, 50%, 500px);
+  padding: 4px;
+  margin: 10px auto;
+  font-weight: 400;
+
+  color: var(--black);
+}
+
+.buttons {
+  width: clamp(150px, 40%, 280px);
+  margin: 20px auto;
+}
+
+.btn {
+  display: block;
+  padding: 10px;
+
+  margin: 10px auto;
+
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  box-shadow: var(--black) -4px 4px 1px;
+}
+
+.btn--short {
+  width: 80%;
+}
+
+.btn:hover {
+  box-shadow: var(--black) -8px 8px 4px;
+}
+
+footer {
+  position: relative;
+
+  bottom: 0;
+}
+
+hr {
+  color: var(--black);
+  outline: none;
+  border: 2px solid var(--black);
+}
