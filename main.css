@@ -17,6 +17,10 @@
 
 body {
   background-color: var(--main);
+  background-image: url('/assets/images/wave.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-clip: padding-box;
   color: var(--white);
 
   padding: 4em 4rem 0;
@@ -36,7 +40,7 @@ img:is(.logo) {
   display: block;
   margin: 0 auto;
 
-  box-shadow: var(--accent-color) -2px 2px 4px 1px;
+  box-shadow:  0 0 4px 8px var(--shadow);
 }
 
 .hashtag {
@@ -61,7 +65,7 @@ nav li {
   height: 100%;
   display: block;
   border-radius: 8px;
-  box-shadow: inset var(--accent-color)  0 0 2px 1px, var(--accent-color) 0 0 8px 4px;
+  box-shadow: inset var(--shadow)  0 0 2px 1px, var(--shadow) 0 0 8px 4px;
 }
 
 
@@ -108,7 +112,7 @@ nav li {
 
 footer {
   margin: 0 auto;
-  width: clamp(300px, 50%, 500px);
+  width: clamp(250px, 40%, 600px);
 
 }
 
