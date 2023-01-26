@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--main);
-  background-image: url('/assets/images/wave.svg');
+  background-image: url('./assets/images/wave.svg');
   background-repeat: no-repeat;
   background-position: top;
   background-clip: padding-box;
