@@ -1,9 +1,9 @@
 :root {
-  --main:#3A4750;
-  --accent-color:#A8E9FF;
-  --shadow: #3D6177;
-  --white: #f2f2f2;
-  --black: #303841;
+  --main:#1e1e21;
+  --accent-color:#8758FF;
+  --shadow: #5CB8E4;
+  --white: #e9e9e9;
+  --black: #181818;
 }
 
 * {
@@ -15,12 +15,22 @@
 }
 
 
+.bg-glass{
+  /* lo saque de un generador de fondos tipo vidrio https://css.glass */
+background: rgba(107, 107, 107, 0.21);
+border-radius: 8px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(107, 107, 107, 0.3);
+}
+
+
 body {
-  background-color: var(--main);
-  background-image: url("./assets/images/wave.svg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-clip: padding-box;
+
+  position: relative;
+  
+  background: var(--black);
   color: var(--white);
 
   padding: 4em 4rem 0;
@@ -28,20 +38,35 @@ body {
 
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  height: 100vh;
 }
+
+
+
 a {
   text-decoration: none;
   color: var(--white);
 }
 
-img:is(.logo) {
+.logo {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-
-  box-shadow:  0 0 4px 8px var(--shadow);
+  transition: box-shadow 1s ease-in-out;
+  box-shadow:
+  0 0 10px 2.5px var(--shadow),
+  0 0 10px 5.0px var(--accent-color)
+    ;
 }
+
+.logo:hover{  
+  box-shadow:
+  0 0 100px 2.5px var(--shadow),
+  0 0 100px 5.0px var(--accent-color)
+    ;
+  backdrop-filter: invert(100%);
+
+}
+
 
 .hashtag {
   margin: 20px 0;
@@ -53,19 +78,26 @@ img:is(.logo) {
 
 
 nav {
+  color: var(--white);
   padding: 10px;
 }
+
 nav li {
   display: inline-block;
-  height: 100%;
+  
+}
+
+.icon{
+  display: block;
+  transition: all .2s ease-in-out;
 }
 
 .icon:hover{
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 8px;
-  box-shadow: inset var(--shadow)  0 0 2px 1px, var(--shadow) 0 0 8px 4px;
+  box-shadow: inset var(--shadow)  0 0 2px 1px, var(--accent-color) 0 0 8px 4px;
+  translate: 0 -10px;
 }
 
 
@@ -87,19 +119,19 @@ nav li {
 }
 
 .btn {
+
   display: block;
   padding: 10px;
 
   margin: 20px auto;
 
-  background-color: var(--accent-color);
-  border: 2px solid var(--black);
-  border-radius: 4px;
+  border: 1px solid var(--white);
+  border-radius: 2px;
 
 
-  color: var(--black);
-
-  font-weight: bold;
+  color: var(--white);
+  transition: all .1s ease-in;
+ 
 }
 
 .btn--short {
@@ -107,7 +139,11 @@ nav li {
 }
 
 .btn:hover {
-  box-shadow: var(--black) -8px 8px 8px;
+  box-shadow: var(--accent-color) -4px 4px 50px 1px;
+  color: var(--black);
+  background-color: var(--accent-color);
+  /* translate: -1px -1px; */
+  font-weight: bold;
 }
 
 footer {
