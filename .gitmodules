@@ -1,3 +1,6 @@
 [submodule "google_clone"]
 	path = google_clone
 	url = https://github.com/jrg4ngst3r/google_clone
+[submodule "Todolist"]
+	path = Todolist
+	url = https://github.com/jrg4ngst3r/Todolist
